@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.active{
+    background-color:#72a6c6;
+    /* opacity: 0.6; */
+    border: double;
+    border-radius: 15px;
+}
+
+body{
+
+    background-image: url("./images/backgroung-img1.png");
+    background-repeat: no-repeat; /*image is displayed only once*/ 
+    background-attachment: fixed;
+    background-size: cover; /*covers the whole background */ 
+}
+
+p{
+    color: rgb(26, 24, 24);
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    line-height: 1.9;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    border-width:medium;
+    padding: 20px 40px;
+    margin: auto;
+}  
+
+#nav_bar{
+    /* background-color:#7dbfe859; */
+    height:fit-content;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:flex-start;
+    /* border-radius: 25%;   removes corners from the bar*/
+    overflow: hidden;
+}
+
+#nav_bar a {
+    display: block;
+    text-align: center;
+    font-family:'MonteCarlo', cursive;;
+    font-weight: bolder;
+    color:black;
+    text-decoration:solid;
+    /* font-family:; */
+    font-size: 35px;
+    padding: 5px 15px;
+}
+
+#nav_bar a:hover{
+    
+    color:rgb(12, 0, 106);
+}
+
+a{
+    color: rgb(68, 152, 225);
+    padding-left: 0%;
+    padding-right: 0%;
+    overflow-wrap: normal;
+} 
+
+h1{
+    color:#315c76;
+    font-size: 60px;
+    font-family: 'MonteCarlo', cursive;
+    display:flex;
+    justify-content: center;
+}
+
+h2{color:#315c76;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    display:flex;
+    justify-content: center;
+    text-decoration-line: underline;
+
+}
+
+.pic-contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: fit-content;
+
+}
+
+img{
+    width:18%;
+    padding: 5px;
+    border:solid;
+    margin: 8px;
+}
+
+  
+.pic-contain img {
+    /* width: 25%; */
+    transition: 0.5s ease-in-out;
+}
+  
+.pic-contain:hover img {
+    transform: scale(1.2);
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page2img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    border: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    padding: 4% 1%;
+    box-sizing: border-box;
+  }
+  
+.box {
+    flex: 0.9;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+  
+.box > img {
+    width: 200%;
+    height: calc(100% - 15vh);
+    object-fit: cover; 
+    transition: .5s;
+}
+  
+.box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+  
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+    width: 80%;
+    height: 80%;
+}
+
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.gallery__thumb {
+    position: relative;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+  
+.gallery__image:hover {
+    transform: scale(1.2);
+}
+
+.gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color:whitesmoke;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 20%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+
+.center{
+    text-align: center
+}
+
+#link-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(26, 24, 24);
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    line-height: 1.9;
+}
